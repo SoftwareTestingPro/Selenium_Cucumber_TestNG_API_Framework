@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="Draw in canvas in selenium">
+<meta name="keywords" content="Selenium, Automation, Selenium Automation, Practice, Automation challenges, automation tasks, practice automation, webdriver practice">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="taPVA2TgeH9BVjZWUsKCYbnQnrqt9ct3dSFczpO5KAk">
+<link rel="icon" href="/img/favicon.ico">
+<title>Input</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/landing-page.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link
+	href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+	rel="stylesheet" type="text/css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	crossorigin="anonymous"></script>
+	<script data-ad-client="ca-pub-6592467220786210" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZG6J6M979N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZG6J6M979N');
+</script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html");
+});
+</script>
+</head>
+<body>
+	<div id="header"></div>
+	<div class="intro-header">
+		<div class="container">
+			<button type="button" class="btn btn-info btn-lg btn-block">Level
+				4 - Task 7</button><br>
+			<h3>Using mouse draw the first alphabet of your name in below square</h3>			
+			<body data-new-gr-c-s-check-loaded="14.1065.0" data-gr-ext-installed="">
+<div class="page-body">
+    <div class="centered">
+        <canvas style="border:solid 3px #FFFFFF" id="canvas" width="220" height="220"></canvas>
+    </div><br>
+
+    <div id="keyevents">
+        <p></p>
+        <ul id="keyeventslist">
+        </ul>
+    </div> 
+</div>
+
+<!-- BODY END -->
+
+
+<script>
+
+        var drawcanvas = false;
+
+
+        document.getElementById("canvas").addEventListener("mouseup", function () {
+            drawcanvas = false;
+        });
+
+        document.getElementById("canvas").addEventListener("mousedown", function () {
+            drawcanvas = true;
+        });
+
+        document.getElementById("canvas").addEventListener("mousemove", function (event) {
+            if (drawcanvas == true) {
+                var li = document.createElement("li");
+                li.appendChild(document.createTextNode("draw " + event.clientX + ", " + event.clientY));                
+                canvas = document.getElementById("canvas");
+                var canvasrect = canvas.getBoundingClientRect();
+                mycanvas2d = canvas.getContext("2d");
+                mycanvas2d.fillStyle = "#FFFFFF";
+                mycanvas2d.beginPath();
+                mycanvas2d.rect(event.clientX - canvasrect.left, event.clientY - canvasrect.top, 4, 4);
+                mycanvas2d.closePath();
+                mycanvas2d.fill();
+            }
+        });
+
+
+</script>
+
+</body>
+			
+			
+			<h3>
+				<a class="btn btn-danger btn-lg" href="4.06javaemail.html">< Previous
+					Task</a> <a class="btn btn-success btn-lg"
+					href="4.08ScheduledScriptsViaJava.html">Next Task ></a>
+			</h3>
+		</div>
+	</div>
+	<!-- Footer -->
+	<div id="footer"></div>
+	<!-- / .Footer -->
+	<script src="js/jquery.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
