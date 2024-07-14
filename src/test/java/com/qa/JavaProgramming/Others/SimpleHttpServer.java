@@ -1,4 +1,4 @@
-package com.qa.JavaProgramming;
+package com.qa.JavaProgramming.Others;
 
 import com.sun.net.httpserver.HttpServer;
 import com.sun.net.httpserver.HttpHandler;

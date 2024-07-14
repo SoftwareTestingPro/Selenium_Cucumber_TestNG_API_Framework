@@ -1,4 +1,4 @@
-package com.qa.JavaProgramming;
+package com.qa.JavaProgramming.String;
 
 import org.testng.annotations.Test;
 

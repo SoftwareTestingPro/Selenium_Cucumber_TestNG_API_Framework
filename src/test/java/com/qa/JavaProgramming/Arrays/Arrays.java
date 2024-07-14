@@ -1,6 +1,6 @@
-package com.qa.JavaProgramming;
+package com.qa.JavaProgramming.Arrays;
 
-public class Abstraction {
+public class Arrays {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

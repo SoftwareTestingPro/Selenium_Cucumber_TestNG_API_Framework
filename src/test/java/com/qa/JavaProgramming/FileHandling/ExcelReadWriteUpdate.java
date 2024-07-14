@@ -1,4 +1,4 @@
-package com.qa.JavaProgramming;
+package com.qa.JavaProgramming.FileHandling;
 
 import java.io.File;
 import java.io.FileInputStream;

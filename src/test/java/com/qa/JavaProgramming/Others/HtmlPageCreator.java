@@ -1,4 +1,4 @@
-package com.qa.JavaProgramming;
+package com.qa.JavaProgramming.Others;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

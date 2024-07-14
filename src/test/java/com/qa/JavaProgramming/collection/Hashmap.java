@@ -1,4 +1,4 @@
-package com.qa.JavaProgramming;
+package com.qa.JavaProgramming.collection;
 
 import java.util.HashMap;
 import java.util.Map;

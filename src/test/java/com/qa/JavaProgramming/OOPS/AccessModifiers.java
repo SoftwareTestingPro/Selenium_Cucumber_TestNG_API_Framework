@@ -1,6 +1,6 @@
-package com.qa.JavaProgramming;
+package com.qa.JavaProgramming.OOPS;
 
-public class Inheritence {
+public class AccessModifiers {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
