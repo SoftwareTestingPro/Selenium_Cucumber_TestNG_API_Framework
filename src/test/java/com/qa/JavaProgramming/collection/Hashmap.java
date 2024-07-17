@@ -1,4 +1,7 @@
-package com.qa.JavaProgramming.collection;
+//HashMap is non-synchronized, making it faster than Hashtable
+//HashMap lets you have one null key and several null values
+
+package com.qa.JavaProgramming.Collection;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,7 +10,7 @@ import org.testng.annotations.Test;
 public class Hashmap {
 	
 	@Test
-	public void TestHashMap() {
+	public void hashmap() {
 		// Create a HashMap to store employee names and positions
 		HashMap<String, String> employees = new HashMap<>();
 

@@ -2,14 +2,14 @@ package com.qa.JavaProgramming.String;
 
 import org.testng.annotations.Test;
 
-public class Replace {
+public class ReplaceReplaceAll {
 
 	public String String1 = "East or west India is the best";
 	public String String2 = "India 545!#&)(*^#$^%&$#@^^%3";
 
 	@Test
 	public void ReplaceSomeTextInString() {
-		String text = String1.replace("onesi", "");
+		String text = String1.replace("East or west ", "");
 		System.out.println(text);
 	}
 	

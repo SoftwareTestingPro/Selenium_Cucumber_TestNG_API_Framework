@@ -1,6 +1,6 @@
-package com.qa.JavaProgramming.collection;
+package com.qa.JavaProgramming.Pattern;
 
-public class Collections {
+public class StarPatterns {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
